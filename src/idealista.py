@@ -2,6 +2,8 @@ import glob
 import os
 import string
 import requests
+from fcScrapper import datasetGeneration
+import json
 
 def getAccessToken():
     url = "https://api.idealista.com/oauth/token?grant_type=client_credentials"
@@ -9,38 +11,72 @@ def getAccessToken():
     payload={}
     headers = {
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
-        'Authorization': 'Basic Z3JxdWNzNmhoZDR4bjJmMHRoeWM5NGQ1NjdtcjV1cHk6ZlNPeGFkOXhIUTdx'
+        'Authorization': 'Basic SECRET'
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
     access_token = response.json()['access_token']
-    print(access_token)
+    return access_token
 
 def configureFilters():
     url = "https://api.idealista.com/3.5/es/search?propertyType=homes&operation=rent&center=41.385063,2.173404&distance=15000"
 
     payload={}
     headers = {
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJyZWFkIl0sImV4cCI6MTY0ODgwMTc0NiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9QVUJMSUMiXSwianRpIjoiYjVlMjJiNmMtYzgxMS00YTM3LWIwOGYtM2MxZWFlN2Q2MjY0IiwiY2xpZW50X2lkIjoiZ3JxdWNzNmhoZDR4bjJmMHRoeWM5NGQ1NjdtcjV1cHkifQ.HWksC84ITifM4FDqaWz7WpnoJhGVHk1IM7-tXUAybws'
+    'Authorization': 'Bearer ' + getAccessToken() +''
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
     totalPages = response.json()['totalPages']
-    print(totalPages)
+    print(type(totalPages)) 
+
     return totalPages
+
 def getItemPerPage(totalPages):
     #TODO recorrer cada página y guardar datos de interés
+    #for page_number in range(1):
+    #    print(page_number)
     url = "https://api.idealista.com/3.5/es/search?propertyType=homes&operation=rent&center=41.385063,2.173404&distance=15000&numPage="+str(totalPages)
+
+        #url = "https://api.idealista.com/3.5/es/search?propertyType=homes&operation=rent&center=41.385063,2.173404&distance=15000&numPage="+str(page_number)
 
     payload={}
     headers = {
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJyZWFkIl0sImV4cCI6MTY0ODgwMTc0NiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9QVUJMSUMiXSwianRpIjoiYjVlMjJiNmMtYzgxMS00YTM3LWIwOGYtM2MxZWFlN2Q2MjY0IiwiY2xpZW50X2lkIjoiZ3JxdWNzNmhoZDR4bjJmMHRoeWM5NGQ1NjdtcjV1cHkifQ.HWksC84ITifM4FDqaWz7WpnoJhGVHk1IM7-tXUAybws'
+        'Authorization': 'Bearer ' + getAccessToken() +''
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
     result = response.json()['totalPages']
     print(result)
 
-totalPages = getAccessToken()
-configureFilters()
-getItemPerPage(totalPages)
+def generate_card(infoCard):
+    card_API = {}
+    card_API['ID'] = 1
+    card_API['price'] = infoCard['price']
+    card_API['location'] = infoCard['district']
+    card_API['number_of_bedrooms'] =  infoCard['rooms']
+    card_API['number_of_bathrooms'] = infoCard['bathrooms']
+    card_API['dimension'] = infoCard['size']
+    try:
+        card_API['floor'] = infoCard['floor']
+    except:
+        card_API['floor'] = 'NA'
+    card_API['date'] = ''
+
+
+    datasetGeneration.datasetGeneration.GenerateDataset(card_API)
+
+#totalPages = getAccessToken()
+#totalPages = configureFilters()
+#getItemPerPage(totalPages)
+json_file_path = "src/idealista.json"
+
+with open(json_file_path, 'r', encoding="utf8") as j:
+     contents = json.loads(j.read())
+     #print (contents)
+     #print (contents['total'])
+j.close()
+
+for infoCard in contents['elementList']:
+        #print(infoCard)
+        generate_card(infoCard)
