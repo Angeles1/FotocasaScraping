@@ -5,6 +5,7 @@ import selenium
 from selenium.webdriver.common.by import By
 from fcScrapper import fcScrapper
 
+
 URL = 'https://www.fotocasa.es/es/alquiler/viviendas/barcelona-capital/todas-las-zonas/l'
 PATH = 'webdriver/chromedriver.exe'
 

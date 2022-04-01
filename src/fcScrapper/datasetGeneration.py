@@ -1,10 +1,12 @@
 import csv
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 import pandas as pd
 from pathlib import Path
 
 
 
-class GenerateDataset:
+class datasetGeneration:
 
 
     def CreateDataSet(file_name):
@@ -20,7 +22,7 @@ class GenerateDataset:
         file_name = "dataset.csv" 
         path = Path(file_name)
         if (path.is_file() == False):
-            GenerateDataset.CreateDataSet(file_name)
+            datasetGeneration.CreateDataSet(file_name)
         df = pd.DataFrame()
         df = df.append(dict_result,ignore_index=True)
         df.to_csv(file_name,mode='a',index=False,header=False)

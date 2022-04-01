@@ -4,8 +4,6 @@ from selenium.webdriver.common.by import By
 import time
 from fcScrapper import datasetGeneration
 
-
-
 class FcScrapper:
 
     n_pages = 1
@@ -66,8 +64,8 @@ class FcScrapper:
             card.click()
             dict_result = self.scrap_card()
             print(dict_result)
-            datasetGeneration.GenerateDataset.GenerateDataset(dict_result)
-            print ("#######GENERANDO DATASET")
+            datasetGeneration.datasetGeneration.GenerateDataset(dict_result)
+            #print ("#######GENERANDO DATASET")
             #break
             if self.is_end_page():
                 break
