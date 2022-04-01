@@ -14,3 +14,5 @@ Norberto Jesús de la Cruz Falcón
 ## Requerimientos
 Es necesario descargar un webdriver del navegador chrome desde <a href="https://chromedriver.chromium.org/downloads">aquí</a> y situar el ejecutable en la carpeta webdriver
 Es necesaria tener instalada la librería Selenium para ejecutar el código
+pip install selenium
+

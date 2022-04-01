@@ -2,6 +2,8 @@ from collections import defaultdict
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+from fcScrapper import datasetGeneration
+
 
 
 class FcScrapper:
@@ -64,6 +66,8 @@ class FcScrapper:
             card.click()
             dict_result = self.scrap_card()
             print(dict_result)
+            datasetGeneration.GenerateDataset.GenerateDataset(dict_result)
+            print ("#######GENERANDO DATASET")
             #break
             if self.is_end_page():
                 break
@@ -153,3 +157,4 @@ class FcScrapper:
 
     def go_next_page(self):
         pass
+
