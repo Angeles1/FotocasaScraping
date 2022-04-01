@@ -1,8 +1,10 @@
+from asyncio.windows_events import NULL
 from collections import defaultdict
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 from fcScrapper import datasetGeneration
+import traceback
 
 class FcScrapper:
 
@@ -45,11 +47,49 @@ class FcScrapper:
         article_selector = "article.re-CardPackPremium"
         searchs = self.browser.find_elements(by=By.CSS_SELECTOR,
                                              value=article_selector)
+        counter = 0
         for search in searchs:
             title = search.find_element(by=By.CSS_SELECTOR,
-                                        value="span.re-CardTitle ")
+                                        value="span.re-CardTitle")
+            price = search.find_element(by=By.CSS_SELECTOR,
+                                        value="span.re-CardPrice")
+            price = search.find_element(by=By.CSS_SELECTOR,
+                                        value="span.re-CardPrice")
+            number_of_bedrooms = search.find_element(by=By.CSS_SELECTOR,
+                                        value="span.re-CardFeaturesWithIcons-feature-icon--rooms").text
+            dimension = search.find_element(by=By.CSS_SELECTOR,
+                                        value="span.re-CardFeaturesWithIcons-feature-icon--surface").text
+            try:
+                floor = search.find_element(by=By.CSS_SELECTOR,
+                                        value="span.re-CardFeaturesWithIcons-feature-icon--floor").text
+            except:
+                floor = "NA"
+            
+            number_of_bathrooms = search.find_element(by=By.CSS_SELECTOR,
+                                        value="span.re-CardFeaturesWithIcons-feature-icon--bathrooms").text
+         
             print(title.text)
+            print(price.text)
+            print(number_of_bedrooms)
+            print(dimension)
+            print(floor)
+            print(number_of_bathrooms)
+            counter = counter+1
+            print (str(counter))
+            
+            card_scraped = {}
+            card_scraped['ID'] = counter
+            card_scraped['price'] = price.text
+            card_scraped['location'] = title.text
+            card_scraped['number_of_bedrooms'] = number_of_bedrooms
+            card_scraped['number_of_bathrooms'] = number_of_bathrooms
+            card_scraped['dimension'] = dimension
+            card_scraped['floor'] = floor
+
+            datasetGeneration.datasetGeneration.GenerateDataset(card_scraped)
+
         print(len(searchs))
+
 
     def scrap_page_clicking(self):
         self.accept_cookies()
@@ -65,7 +105,7 @@ class FcScrapper:
             dict_result = self.scrap_card()
             print(dict_result)
             datasetGeneration.datasetGeneration.GenerateDataset(dict_result)
-            #print ("#######GENERANDO DATASET")
+            #print ("GENERA DATASET")
             #break
             if self.is_end_page():
                 break
@@ -144,10 +184,15 @@ class FcScrapper:
                     "window.scrollTo(0, " + str(windows_height*counter) + ");")
 
     def is_end_page(self):
-        page_nav = self.browser.find_elements(by=By.CSS_SELECTOR,
+        try:
+            page_nav = self.browser.find_elements(by=By.CSS_SELECTOR,
                                               value="div.re-Pagination")
-        return len(page_nav) != 0
-
+            return len(page_nav) != 0
+        except: 
+            traceback.print_exc()
+        
+        
+        
     def is_max_scroll(self, scroll_to):
         body = self.browser.find_element(by=By.TAG_NAME, value="body")
         max_scroll = body.size['height']
