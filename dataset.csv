@@ -1,11 +1,29 @@
-price,location,number_of_bedrooms,dimension,floor
-1.000,Montbau,2,85,3ª
-1.210,El Raval,1,45,1ª
-1.575,Fort Pienc,3,155,2ª
-960,Ático de alquiler en Sant Gervasi i la Bonanova,1,66,2ª
-1.800,El Poble Sec - Parc de Montjuïc,2,54,Principal
-1.000,Montbau,2,85,3ª
-1.210,El Raval,1,45,1ª
-1.575,Fort Pienc,3,155,2ª
-960,Ático de alquiler en Sant Gervasi i la Bonanova,1,66,2ª
-1.800,El Poble Sec - Parc de Montjuïc,2,54,Principal
+ID,price,location,number_of_bedrooms,number_of_bathrooms,dimension,floor
+1,1.000 € /mes,"Piso en Carrer de L'arquitectura, Horta - Guinardó",2 habs.,1 baño,85 m²,3ª Planta
+2,1.210 € /mes,"Piso en Carrer la Rambla, Ciutat Vella",1 hab.,1 baño,45 m²,1ª Planta
+3,930 € /mes,"Piso en Carrer de Magalhaes, Sants - Montjuïc",1 hab.,1 baño,33 m²,5ª Planta
+4,2.800 € /mes,"Piso en Pl. de Sant Jaume, Ciutat Vella",3 habs.,2 baños,170 m²,Principal
+5,1.575 € /mes,"Piso en Roger de Flor, 100, Eixample",3 habs.,2 baños,155 m²,2ª Planta
+6,960 € /mes,Ático en Sarrià - Sant Gervasi,1 hab.,1 baño,66 m²,2ª Planta
+7,2.200 € /mes,"Piso en Carrer del Dr. Fleming, Sarrià - Sant Gervasi",3 habs.,2 baños,128 m²,1ª Planta
+8,750 € /mes,Piso en Sants - Montjuïc,2 habs.,1 baño,48 m²,2ª Planta
+9,1.300 € /mes,Piso en Eixample,4 habs.,1 baño,116 m²,NA
+10,1.050 € /mes,"Piso en Rambla de Catalunya, Eixample",1 hab.,1 baño,50 m²,7ª Planta
+11,2.200 € /mes,"Piso en Via Augusta, Sarrià - Sant Gervasi",3 habs.,2 baños,130 m²,3ª Planta
+12,2.500 € /mes,Apartamento en Eixample,3 habs.,4 baños,100 m²,NA
+13,2.000 € /mes,"Piso en Balmes, 448, Sarrià - Sant Gervasi",3 habs.,2 baños,105 m²,2ª Planta
+14,874 € /mes,Piso en Ciutat Vella,2 habs.,1 baño,56 m²,2ª Planta
+15,795 € /mes,"Piso en Mare de Deu del Remei , Sants - Montjuïc",2 habs.,1 baño,55 m²,1ª Planta
+16,2.500 € /mes,"Piso en Carrer del Bruc, Eixample",5 habs.,2 baños,221 m²,Principal
+17,1.000 € /mes,"Piso en Onze de Setmebre, Sant Andreu",3 habs.,1 baño,70 m²,7ª Planta
+18,1.200 € /mes,"Piso en Carrer de Felipe de Paz, Les Corts",4 habs.,2 baños,95 m²,3ª Planta
+19,1.400 € /mes,"Piso en Carrer del Camp, Sarrià - Sant Gervasi",2 habs.,2 baños,66 m²,1ª Planta
+20,1.250 € /mes,"Piso en Rambla del Raval, Ciutat Vella",3 habs.,2 baños,99 m²,4ª Planta
+21,2.400 € /mes,"Ático en Carrer D'en Gignàs, Ciutat Vella",1 hab.,1 baño,48 m²,NA
+22,1.490 € /mes,"Piso en Avinguda del Coll del Portell, Gràcia",3 habs.,1 baño,70 m²,1ª Planta
+23,3.300 € /mes,"Ático en Comte D'urgell 257 , Eixample",4 habs.,5 baños,158 m²,NA
+24,1.600 € /mes,"Piso en Carrer de Muntaner, Sarrià - Sant Gervasi",2 habs.,2 baños,90 m²,2ª Planta
+25,2.000 € /mes,"Piso en D´avinyó, Ciutat Vella",3 habs.,2 baños,110 m²,NA
+26,1.275 € /mes,"Piso en Carrer de Casanova, Eixample",1 hab.,1 baño,36 m²,5ª Planta
+27,1.600 € /mes,"Piso en Carrer de Puerto Príncipe, Sant Andreu",2 habs.,1 baño,45 m²,1ª Planta
+28,1.425 € /mes,"Piso en Carrer Dels Consellers, Ciutat Vella",2 habs.,1 baño,60 m²,3ª Planta

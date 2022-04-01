@@ -10,7 +10,7 @@ class datasetGeneration:
 
 
     def CreateDataSet(file_name):
-        headerList = ['price', 'location', 'number_of_bedrooms', 'dimension', 'floor']
+        headerList = ['ID','price', 'location', 'number_of_bedrooms','number_of_bathrooms', 'dimension', 'floor']
     
         with open(file_name, 'w') as file:
             dw = csv.DictWriter(file, delimiter=',', 

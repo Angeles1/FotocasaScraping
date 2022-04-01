@@ -10,6 +10,7 @@ URL = 'https://www.fotocasa.es/es/alquiler/viviendas/barcelona-capital/todas-las
 PATH = 'webdriver/chromedriver.exe'
 
 scrapper = fcScrapper.FcScrapper(1, URL, PATH)
-scrapper.scrap_page_clicking()
+#scrapper.scrap_page_clicking()
+scrapper.scrap_page()
 input()
 scrapper.close_browser()
