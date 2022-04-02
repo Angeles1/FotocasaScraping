@@ -41,7 +41,6 @@ class datasetGeneration:
             dict_result['ID'] = int(last_ID)+1
         except ValueError:
             dict_result['ID'] = 1 # Should start in 1 or in 0
-        print("hello")
         dict_result['date'] = today
         df = pd.DataFrame()
         df = df.append(dict_result,ignore_index=True)

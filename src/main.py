@@ -9,8 +9,7 @@ from fcScrapper import fcScrapper
 URL = 'https://www.fotocasa.es/es/alquiler/viviendas/barcelona-capital/todas-las-zonas/l'
 PATH = 'webdriver/chromedriver.exe'
 
-scrapper = fcScrapper.FcScrapper(1, URL, PATH)
-#scrapper.scrap_page_clicking()
-scrapper.scrap_page()
+scrapper = fcScrapper.FcScrapper(4, URL, PATH)
+scrapper.scrap_pages()
 input()
 scrapper.close_browser()

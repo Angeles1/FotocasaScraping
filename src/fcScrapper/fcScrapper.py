@@ -17,7 +17,6 @@ class FcScrapper:
     def __init__(self, n_pages=n_pages, url=url, webdriver_path=webdriver_path):
         self.n_pages = n_pages
         self.url = url
-        self.webdriver_path = webdriver_path
         self.browser = webdriver.Chrome(ChromeDriverManager().install())
         self.open_browser()
 
@@ -42,12 +41,23 @@ class FcScrapper:
             accept_button[0].click()
         return
 
+    def scrap_pages(self):
+        self.scrap_page()
+        if self.n_pages > 1:
+            for i in range(2, self.n_pages+1):
+                print("Index: " + str(i))
+                new_url = self.url + "/" + str(i)
+                self.browser.get(new_url)
+                self.scrap_page()
+                #self.scrap_page_clicking()
+
     def scrap_page(self):
         # Pending -> Do not clic
+        
         self.accept_cookies()
         self.scroll_to_bottom()
 
-        article_selector = "article.re-CardPackPremium"
+        article_selector = "section.re-SearchResult>article"
         searchs = self.browser.find_elements(by=By.CSS_SELECTOR,
                                              value=article_selector)
         counter = 0
@@ -111,7 +121,7 @@ class FcScrapper:
 
         while True:
             time.sleep(3)
-            print("Counter: " + str(counter))
+
             self.scroll_to_bottom()
             article_selector = "article.re-CardPackPremium"
             cards = self.browser.find_elements(by=By.CSS_SELECTOR,
@@ -255,7 +265,4 @@ class FcScrapper:
         body = self.browser.find_element(by=By.TAG_NAME, value="body")
         max_scroll = body.size['height']
         return scroll_to > max_scroll
-
-    def go_next_page(self):
-        pass
 
