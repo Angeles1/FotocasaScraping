@@ -71,25 +71,46 @@ class FcScrapper:
                 number_of_bedrooms = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--rooms").text
             except selenium.common.exceptions.NoSuchElementException:
-                number_of_bedrooms = "NA"
+                features_simple = search.find_elements(by=By.CSS_SELECTOR,
+                                                          value="ul.re-CardFeatures-wrapper>li")
+                if len(features_simple) > 0:
+                    number_of_bedrooms = features_simple[0].text
+                else:
+                    number_of_bedrooms = 'NA'
+
 
             try:
                 dimension = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--surface").text
             except selenium.common.exceptions.NoSuchElementException:
-                dimension = "NA"
+                features_simple = search.find_elements(by=By.CSS_SELECTOR,
+                                                          value="ul.re-CardFeatures-wrapper>li")
+                if len(features_simple) > 2:
+                    dimension = features_simple[2].text
+                else:
+                    dimension = 'NA'
             
             try:
                 floor = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--floor").text
             except selenium.common.exceptions.NoSuchElementException:
-                floor = "NA"
+                features_simple = search.find_elements(by=By.CSS_SELECTOR,
+                                                          value="ul.re-CardFeatures-wrapper>li")
+                if len(features_simple) > 3:
+                    floor = features_simple[3].text
+                else:
+                    floor = 'NA'
             
             try:
                 number_of_bathrooms = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--bathrooms").text
             except selenium.common.exceptions.NoSuchElementException:
-                number_of_bathrooms = "NA"
+                features_simple = search.find_elements(by=By.CSS_SELECTOR,
+                                                          value="ul.re-CardFeatures-wrapper>li")
+                if len(features_simple) > 1:
+                    number_of_bathrooms = features_simple[1].text
+                else:
+                    number_of_bathrooms = 'NA'
             
             print(title.text)
             print(price.text)
