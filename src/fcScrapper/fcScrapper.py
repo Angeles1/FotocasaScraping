@@ -1,6 +1,7 @@
 from asyncio.windows_events import NULL
 from collections import defaultdict
 from selenium import webdriver
+import selenium
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import time
@@ -55,21 +56,31 @@ class FcScrapper:
                                         value="span.re-CardTitle")
             price = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardPrice")
-            price = search.find_element(by=By.CSS_SELECTOR,
-                                        value="span.re-CardPrice")
-            number_of_bedrooms = search.find_element(by=By.CSS_SELECTOR,
+                  
+            try:
+                number_of_bedrooms = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--rooms").text
-            dimension = search.find_element(by=By.CSS_SELECTOR,
+            except selenium.common.exceptions.NoSuchElementException:
+                number_of_bedrooms = "NA"
+
+            try:
+                dimension = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--surface").text
+            except selenium.common.exceptions.NoSuchElementException:
+                dimension = "NA"
+            
             try:
                 floor = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--floor").text
-            except:
+            except selenium.common.exceptions.NoSuchElementException:
                 floor = "NA"
             
-            number_of_bathrooms = search.find_element(by=By.CSS_SELECTOR,
+            try:
+                number_of_bathrooms = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--bathrooms").text
-         
+            except selenium.common.exceptions.NoSuchElementException:
+                number_of_bathrooms = "NA"
+            
             print(title.text)
             print(price.text)
             print(number_of_bedrooms)
@@ -87,6 +98,7 @@ class FcScrapper:
             card_scraped['number_of_bathrooms'] = number_of_bathrooms
             card_scraped['dimension'] = dimension
             card_scraped['floor'] = floor
+            card_scraped['source'] = 'Fotocasa'
 
             datasetGeneration.datasetGeneration.GenerateDataset(card_scraped)
 
@@ -120,7 +132,7 @@ class FcScrapper:
         card_info = {}
 
         # Source
-        card_info['source'] = "Fotocasa"
+        card_info['source'] = "fotocasa"
 
         # Id
         card_info['id'] = self.browser.current_url.split('/')[-2]

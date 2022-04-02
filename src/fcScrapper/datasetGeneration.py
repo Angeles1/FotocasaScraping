@@ -12,7 +12,7 @@ class datasetGeneration:
 
 
     def CreateDataSet(file_name):
-        headerList = ['ID','date','price', 'location', 'number_of_bedrooms','number_of_bathrooms', 'dimension', 'floor']
+        headerList = ['ID','date','price', 'location', 'number_of_bedrooms','number_of_bathrooms', 'dimension', 'floor', 'source']
     
         with open(file_name, 'w') as file:
             dw = csv.DictWriter(file, delimiter=',', 
@@ -23,6 +23,7 @@ class datasetGeneration:
     def GenerateDataset(dict_result):
         file_name = "dataset.csv" 
         path = Path(file_name)
+        last_ID = ""
         if (path.is_file() == False):
             datasetGeneration.CreateDataSet(file_name)
         else:
@@ -36,7 +37,11 @@ class datasetGeneration:
                 last_line = f.readline().decode()
                 last_ID = last_line.split(',')[0]
         today = date.today()
-        dict_result['ID'] = int(last_ID)+1
+        try: # catch ValueError in case there is no data
+            dict_result['ID'] = int(last_ID)+1
+        except ValueError:
+            dict_result['ID'] = 1 # Should start in 1 or in 0
+        print("hello")
         dict_result['date'] = today
         df = pd.DataFrame()
         df = df.append(dict_result,ignore_index=True)

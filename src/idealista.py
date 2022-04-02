@@ -62,6 +62,7 @@ def generate_card(infoCard):
     except:
         card_API['floor'] = 'NA'
     card_API['date'] = ''
+    card_API['source'] = 'Idealista'
 
 
     datasetGeneration.datasetGeneration.GenerateDataset(card_API)
