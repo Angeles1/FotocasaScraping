@@ -2,6 +2,7 @@ from asyncio.windows_events import NULL
 from collections import defaultdict
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 from fcScrapper import datasetGeneration
 import traceback
@@ -10,13 +11,13 @@ class FcScrapper:
 
     n_pages = 1
     url= 'https://www.fotocasa.es/es/alquiler/viviendas/barcelona-capital/todas-las-zonas/l'
-    webdriver_path= '../webdriver/chromedriver.exe'
+    webdriver_path= 'webdriver/chromedriver.exe'
 
     def __init__(self, n_pages=n_pages, url=url, webdriver_path=webdriver_path):
         self.n_pages = n_pages
         self.url = url
         self.webdriver_path = webdriver_path
-        self.browser = webdriver.Chrome(webdriver_path)
+        self.browser = webdriver.Chrome(ChromeDriverManager().install())
         self.open_browser()
 
     def __del__(self):
@@ -27,6 +28,7 @@ class FcScrapper:
 
     def close_browser(self):
         self.browser.quit()
+
 
     def accept_cookies(self):
         div_selector = "div.sui-MoleculeModal-dialog"
@@ -97,25 +99,31 @@ class FcScrapper:
 
         while True:
             time.sleep(3)
+            print("Counter: " + str(counter))
+            self.scroll_to_bottom()
             article_selector = "article.re-CardPackPremium"
-            card = self.browser.find_elements(by=By.CSS_SELECTOR,
-                                             value=article_selector)[counter-1]
-            scroll_to = card.size['height'] + card.location['y']
+            cards = self.browser.find_elements(by=By.CSS_SELECTOR,
+                                             value=article_selector)
+            if(counter > len(cards)):
+                break
+            card = cards[counter-1]
+            
             card.click()
             dict_result = self.scrap_card()
             print(dict_result)
-            datasetGeneration.datasetGeneration.GenerateDataset(dict_result)
-            #print ("GENERA DATASET")
-            #break
-            if self.is_end_page():
-                break
-            self.scroll_to_pos(scroll_to)
+            datasetGeneration.datasetGeneration.GenerateDataset(dict_result)  
             counter += 1
-
+            
 
     def scrap_card(self):
         time.sleep(3)
         card_info = {}
+
+        # Source
+        card_info['source'] = "Fotocasa"
+
+        # Id
+        card_info['id'] = self.browser.current_url.split('/')[-2]
 
         # Price
         price_selector = "span.re-DetailHeader-price"
@@ -128,7 +136,7 @@ class FcScrapper:
         title_selector = "h1.re-DetailHeader-propertyTitle"
         title_elem = self.browser.find_element(by=By.CSS_SELECTOR,
                                              value=title_selector)
-        card_info['location'] = title_elem.text.split(',')[-1].lstrip()
+        card_info['location'] = title_elem.text
         print("Location: " +  card_info['location'])
 
         #Bedrooms
@@ -136,25 +144,63 @@ class FcScrapper:
                             "li.re-DetailHeader-featuresItem"
         features = self.browser.find_elements(by=By.CSS_SELECTOR,
                                               value=features_selector)
-        bedroom_text = features[0].find_elements(by=By.TAG_NAME,
+        try:
+            bedroom_text = features[0].find_elements(by=By.TAG_NAME,
                                                  value="span")
-        card_info['number_of_bedrooms'] = bedroom_text[-1].text
+            card_info['number_of_bedrooms'] = bedroom_text[-1].text
+        except IndexError:
+             card_info['number_of_bedrooms'] = 'NA'
         print(card_info['number_of_bedrooms'])
+
         #Dimension
 
-        dimension_text = features[2].find_elements(by=By.TAG_NAME,
+        try:
+            dimension_text = features[2].find_elements(by=By.TAG_NAME,
                                                  value="span")
-        card_info['dimension'] = dimension_text[-1].text
+            card_info['dimension'] = dimension_text[-1].text
+        except IndexError:
+            card_info['dimension'] = "NA"
         print("Dimension: " + card_info['dimension'])
+
         #Floors
-        floor_text = features[3].find_elements(by=By.TAG_NAME,
+        try:
+            floor_text = features[3].find_elements(by=By.TAG_NAME,
                                                    value="span")
-        card_info['floor'] = floor_text[-1].text
-        print("Floor: " + card_info['floor'])
+            card_info['floor'] = floor_text[-1].text
+        except IndexError:
+            card_info['floor'] = 0
+        print("Floor: " + str(card_info['floor']))
 
-
-
-
+        #Type
+        detailed_info_selector = "section.sui-SectionInfo"
+        detailed_info = self.browser.find_elements(by=By.CSS_SELECTOR,
+                                                    value=detailed_info_selector)[1]
+        detailed_list_selector = "div.sui-SectionInfo-content>div>div.re-DetailFeaturesList\
+        >div.re-DetailFeaturesList-feature"
+        detailed_info_list = detailed_info.find_elements(by=By.CSS_SELECTOR,
+                                                        value=detailed_list_selector)
+        # Other details
+        for detail in detailed_info_list:
+            details_to_extract = ["Tipo de immueble", "Estado", "Antigüedad",
+            "Amueblado", "Consumo de energia", "Emisiones"]
+        
+            content_selector = "div.re-DetailFeaturesList-featureContent"
+            label_selector = "p.re-DetailFeaturesList-featureLabel"
+            value_selector = "p.re-DetailFeaturesList-featureValue"
+            content = detail.find_element(by=By.CSS_SELECTOR,
+                                          value=content_selector)
+            label = content.find_element(by=By.CSS_SELECTOR,
+                                        value=label_selector).text
+            
+            if label in details_to_extract:
+                value = content.find_element(by=By.CSS_SELECTOR,
+                                            value=value_selector)
+                print("Label: " + label)
+                print("Value: " + value.text)
+                card_info[label] = str(value.text)
+                print("Dict value: " + card_info[label])
+ 
+        #Finish -> go back
         self.browser.back()
         time.sleep(3)
         return card_info
