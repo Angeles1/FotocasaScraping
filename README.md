@@ -39,6 +39,11 @@ https://www.geeksforgeeks.org/selenium-python-tutorial/
 
 https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project
 
+* Publicación DataSet
+
+https://zenodo.org/
+
+
 
 ## Requerimientos
 Es necesario tener instalada la librería Selenium para ejecutar el código
