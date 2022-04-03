@@ -25,3 +25,7 @@ El programa utiliza ChromeDriver compatible con la versión de Chrome que tenga 
 https://chromedriver.chromium.org/downloads
 
 
+Para ejecutar el script también es necesario descargarse el webdriver correspondiente con la
+versión de Google Chrome que se tenga instalada e incluirlo en la carpeta webdriver. El webdriver
+se puede descargar desde el siguiente <a href="https://chromedriver.chromium.org/downloads">enlace</a>
+
