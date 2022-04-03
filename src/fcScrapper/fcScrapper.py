@@ -61,7 +61,7 @@ class FcScrapper:
         article_selector = "section.re-SearchResult>article"
         searchs = self.browser.find_elements(by=By.CSS_SELECTOR,
                                              value=article_selector)
-        counter = 0
+
         for search in searchs:
             title = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardTitle")
@@ -134,27 +134,33 @@ class FcScrapper:
                     print(number_of_bathrooms)
                 else:
                     number_of_bathrooms = 'NA'
+
+            try:
+                link_search = search.find_elements(by=By.TAG_NAME, value="a")[0].get_attribute("href")
+                ref_number = link_search.split('/')[-2]
+            except selenium.common.exceptions.NoSuchElementException:
+                link_search = 'NA'
+                ref_number = 'NA'
             
-            #print(title)
-            #print(price)
+            #print(title.text)
+            #print(price.text)
             #print(number_of_bedrooms)
             #print(dimension)
             #print(floor)
             #print(number_of_bathrooms)
-            counter = counter+1
-            print (str(counter))
-
-            card_scraped = {}
-            card_scraped['ID'] = counter
+            #print(link_search)
+            
+            card_scraped = dict()
+            card_scraped['ref_number'] = ref_number
             card_scraped['price'] = price
             card_scraped['location'] = title
-            card_scraped['city'] = 'Barcelona'
             card_scraped['number_of_bedrooms'] = number_of_bedrooms
             card_scraped['number_of_bathrooms'] = number_of_bathrooms
             card_scraped['dimension'] = dimension
             card_scraped['floor'] = floor
-            card_scraped['Link'] = ""
+            card_scraped['Link'] = link_search
             card_scraped['source'] = 'Fotocasa'
+            card_scraped['Ciudad'] = 'Barcelona'
 
             datasetGeneration.datasetGeneration.GenerateDataset(card_scraped)
 
