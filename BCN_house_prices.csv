@@ -1,0 +1,129 @@
+ID,Ref_code,Precio,Ubicacion,Ciudad,Habitaciones,Banos,Superficie,Planta,Link,Portal_web,Fecha
+1,97246958,1200,Gràcia,Barcelona,2,1,80,1,Idealista,https://www.idealista.com/inmueble/97246958/,2022-04-03
+2,97246857,1100,Sarrià-Sant Gervasi,Barcelona,1,1,50,2,Idealista,https://www.idealista.com/inmueble/97246857/,2022-04-03
+3,97246725,1600,Eixample,Barcelona,2,1,80,9,Idealista,https://www.idealista.com/inmueble/97246725/,2022-04-03
+4,81122133,3000,Sarrià-Sant Gervasi,Barcelona,1,1,66,NA,Idealista,https://www.idealista.com/inmueble/81122133/,2022-04-03
+5,97016501,2850,Sarrià-Sant Gervasi,Barcelona,2,2,110,NA,Idealista,https://www.idealista.com/inmueble/97016501/,2022-04-03
+6,97245866,8000,Sant Martí,Barcelona,3,2,210,6,Idealista,https://www.idealista.com/inmueble/97245866/,2022-04-03
+7,97245820,850,La Roureda,Barcelona,3,2,85,2,Idealista,https://www.idealista.com/inmueble/97245820/,2022-04-03
+8,91002718,1500,Eixample,Barcelona,2,1,65,8,Idealista,https://www.idealista.com/inmueble/91002718/,2022-04-03
+9,97245765,1400,Torreblanca,Barcelona,2,1,80,4,Idealista,https://www.idealista.com/inmueble/97245765/,2022-04-03
+10,96424684,1300,Sarrià-Sant Gervasi,Barcelona,1,1,65,1,Idealista,https://www.idealista.com/inmueble/96424684/,2022-04-03
+11,38914573,3500,Eixample,Barcelona,3,2,145,4,Idealista,https://www.idealista.com/inmueble/38914573/,2022-04-03
+12,40461428,2149,Sarrià-Sant Gervasi,Barcelona,5,3,140,4,Idealista,https://www.idealista.com/inmueble/40461428/,2022-04-03
+13,40492046,2630,Sarrià-Sant Gervasi,Barcelona,3,2,120,bj,Idealista,https://www.idealista.com/inmueble/40492046/,2022-04-03
+14,89309197,20000,Sarrià-Sant Gervasi,Barcelona,10,6,620,NA,Idealista,https://www.idealista.com/inmueble/89309197/,2022-04-03
+15,95925905,4500,Sarrià-Sant Gervasi,Barcelona,4,4,211,NA,Idealista,https://www.idealista.com/inmueble/95925905/,2022-04-03
+16,96541791,4800,Sarrià-Sant Gervasi,Barcelona,6,6,367,NA,Idealista,https://www.idealista.com/inmueble/96541791/,2022-04-03
+17,96543521,3300,Eixample,Barcelona,5,4,183,8,Idealista,https://www.idealista.com/inmueble/96543521/,2022-04-03
+18,96543933,2700,Les Corts,Barcelona,3,3,82,NA,Idealista,https://www.idealista.com/inmueble/96543933/,2022-04-03
+19,96648329,1950,Sarrià-Sant Gervasi,Barcelona,3,2,86,NA,Idealista,https://www.idealista.com/inmueble/96648329/,2022-04-03
+20,96872070,2550,Sarrià-Sant Gervasi,Barcelona,4,3,185,NA,Idealista,https://www.idealista.com/inmueble/96872070/,2022-04-03
+21,163001940,1000,Horta - Guinardó,Barcelona,2,1,85,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-no-amueblado/163001940/d,2022-04-03
+22,162374941,1210,Ciutat Vella,Barcelona,1,1,45,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado-television-internet/162374941/d,2022-04-03
+23,161959316,930,Sants - Montjuïc,Barcelona,1,1,33,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-amueblado-television-internet/161959316/d,2022-04-03
+24,163117638,2800,Ciutat Vella,Barcelona,3,2,170,Principal,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado/163117638/d,2022-04-03
+25,163101020,960,Ático en Sarrià - Sant Gervasi,Barcelona,1,1,66,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza/163101020/d,2022-04-03
+26,163088916,1690,Sarrià - Sant Gervasi,Barcelona,4,2,120,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-zona-comunitaria-ascensor-parking-piscina-no-amueblado/163088916/d,2022-04-03
+27,163070949,2200,Sarrià - Sant Gervasi,Barcelona,3,2,128,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-terraza-trastero-ascensor-se-aceptan-mascotas-no-amueblado/163070949/d,2022-04-03
+28,163068187,750,Sants - Montjuïc,Barcelona,2,1,48,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/sants-badal/163068187/d,2022-04-03
+29,163052942,1050,Eixample,Barcelona,1,1,50,7ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado/163052942/d,2022-04-03
+30,163036673,2200,Sarrià - Sant Gervasi,Barcelona,3,2,130,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor/163036673/d,2022-04-03
+31,163028832,2900,Sarrià - Sant Gervasi,Barcelona,5,3,138,4ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor/163028832/d,2022-04-03
+32,162994620,2500,Apartamento en Eixample,Barcelona,3,4,100,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/terraza-piscina-amueblado-piscina/162994620/d,2022-04-03
+33,162954245,2000,Sarrià - Sant Gervasi,Barcelona,3,2,105,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor/162954245/d,2022-04-03
+34,162816549,950,Eixample,Barcelona,2,2,63,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/ascensor/162816549/d,2022-04-03
+35,162816337,874,Ciutat Vella,Barcelona,2,1,56,2ª,Fotocasa,"https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/sant-pere,-sta--caterina-i-la-ribera/162816337/d",2022-04-03
+36,161273019,2000,Eixample,Barcelona,3,2,116,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/ascensor/161273019/d,2022-04-03
+37,161877767,2500,Eixample,Barcelona,5,2,221,Principal,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-terraza-ascensor-no-amueblado/161877767/d,2022-04-03
+38,162849536,1000,Sant Andreu,Barcelona,3,1,70,7ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-ascensor-amueblado/162849536/d,2022-04-03
+39,162879269,750,Sant Martí,Barcelona,3,2,82,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-terraza-ascensor/162879269/d,2022-04-03
+40,163026103,1200,Les Corts,Barcelona,4,2,95,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-amueblado/163026103/d,2022-04-03
+41,163134679,1690,Sarrià - Sant Gervasi,Barcelona,4,2,120,4ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-parking-terraza-ascensor-piscina/163134679/d,2022-04-03
+42,163126946,960,Sarrià - Sant Gervasi,Barcelona,1,1,50,6ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-ascensor-no-amueblado/163126946/d,2022-04-03
+43,163114940,2400,Ciutat Vella,Barcelona,1,1,48,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-amueblado/163114940/d,2022-04-03
+44,163114508,1400,Sarrià - Sant Gervasi,Barcelona,2,2,66,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-trastero-ascensor-no-amueblado/163114508/d,2022-04-03
+45,162591780,1490,Gràcia,Barcelona,3,1,70,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-ascensor-amueblado-television-internet/162591780/d,2022-04-03
+46,163104309,3300,Eixample,Barcelona,4,5,158,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-no-amueblado/163104309/d,2022-04-03
+47,163067906,1600,Sarrià - Sant Gervasi,Barcelona,2,2,90,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-ascensor-no-amueblado/163067906/d,2022-04-03
+48,163055011,1275,Eixample,Barcelona,1,1,36,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-amueblado-television-internet/163055011/d,2022-04-03
+49,163053506,2770,Ciutat Vella,Barcelona,1,2,80,4ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado-se-aceptan-mascotas/163053506/d,2022-04-03
+50,163038788,1800,Ciutat Vella,Barcelona,2,2,80,4ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-trastero-ascensor-amueblado/163038788/d,2022-04-03
+51,162969890,3000,Les Corts,Barcelona,4,2,150,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-terraza-trastero-ascensor/162969890/d,2022-04-03
+52,161974782,1600,Sant Andreu,Barcelona,2,1,45,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-zona-comunitaria-ascensor-amueblado-television-internet-piscina/161974782/d,2022-04-03
+53,163029286,1425,Ciutat Vella,Barcelona,2,1,60,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado-television-internet/163029286/d,2022-04-03
+54,163028775,1400,Ciutat Vella,Barcelona,2,1,60,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado-television-internet/163028775/d,2022-04-03
+55,163017766,6230,Sarrià - Sant Gervasi,Barcelona,4,4,289,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-terraza-ascensor-amueblado-se-aceptan-mascotas/163017766/d,2022-04-03
+56,162990435,2000,Apartamento en Gràcia,Barcelona,2,1,73,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-amueblado/162990435/d,2022-04-03
+57,162989819,2700,Sarrià - Sant Gervasi,Barcelona,5,3,200,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-parking-no-amueblado/162989819/d,2022-04-03
+58,162945732,1100,Sant Martí,Barcelona,3,1,70,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/ascensor-amueblado-se-aceptan-mascotas/162945732/d,2022-04-03
+59,162923739,2500,Sarrià - Sant Gervasi,Barcelona,4,3,160,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-no-amueblado/162923739/d,2022-04-03
+60,162893187,2400,Apartamento en Gràcia,Barcelona,4,2,110,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-terraza-ascensor/162893187/d,2022-04-03
+61,162873915,2150,Sarrià - Sant Gervasi,Barcelona,3,3,113,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-parking-terraza-ascensor/162873915/d,2022-04-03
+62,162806494,920,Ciutat Vella,Barcelona,1,1,43,Principal,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-amueblado-television/162806494/d,2022-04-03
+63,162221915,2100,Ciutat Vella,Barcelona,2,2,75,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado-television-internet/162221915/d,2022-04-03
+64,161036963,1100,Ciutat Vella,Barcelona,2,1,84,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-ascensor-amueblado/161036963/d,2022-04-03
+65,162721619,1238,Sant Martí,Barcelona,1,1,55,6ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-piscina-no-amueblado/162721619/d,2022-04-03
+66,162534909,1150,Les Corts,Barcelona,2,1,90,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor/162534909/d,2022-04-03
+67,162651569,1350,Eixample,Barcelona,3,1,60,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-ascensor-no-amueblado/162651569/d,2022-04-03
+68,156348209,1400,Ciutat Vella,Barcelona,1,1,45,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/amueblado/156348209/d,2022-04-03
+69,161688642,2300,Dúplex en Sarrià - Sant Gervasi,Barcelona,3,3,180,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-parking-terraza-ascensor-se-aceptan-mascotas-no-amueblado/161688642/d,2022-04-03
+70,162072085,1400,Ciutat Vella,Barcelona,3,2,78,4ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-no-amueblado/162072085/d,2022-04-03
+71,159259710,860,Horta - Guinardó,Barcelona,3,1,78,Bajos,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion/159259710/d,2022-04-03
+72,155734829,2500,Eixample,Barcelona,2,2,100,4ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado/155734829/d,2022-04-03
+73,162749238,1900,Les Corts,Barcelona,4,3,151,9ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-no-amueblado/162749238/d,2022-04-03
+74,161959359,900,Ciutat Vella,Barcelona,1,1,37,Bajos,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-amueblado-television-internet/161959359/d,2022-04-03
+75,163131450,2200,Casa adosada en Gràcia,Barcelona,3,3,130,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-jardin-terraza-trastero-parking-television-internet/163131450/d,2022-04-03
+76,163105393,1050,Horta - Guinardó,Barcelona,3,2,80,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-terraza/163105393/d,2022-04-03
+77,163069853,990,Ciutat Vella,Barcelona,5,1,104,4ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/no-amueblado/163069853/d,2022-04-03
+78,163064092,1216,Eixample,Barcelona,2,2,60,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor/163064092/d,2022-04-03
+79,163018387,1050,Eixample,Barcelona,3,1,70,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-no-amueblado/163018387/d,2022-04-03
+80,162986057,1250,Eixample,Barcelona,4,2,88,7ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/ascensor-amueblado-television-internet/162986057/d,2022-04-03
+81,162967387,1800,Horta - Guinardó,Barcelona,3,2,70,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/ascensor-amueblado/162967387/d,2022-04-03
+82,162847729,2900,Sarrià - Sant Gervasi,Barcelona,3,3,207,4ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor/162847729/d,2022-04-03
+83,158559021,1238,Sarrià - Sant Gervasi,Barcelona,3,2,82,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-no-amueblado/158559021/d,2022-04-03
+84,163121007,1950,Sant Martí,Barcelona,3,2,90,4ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-terraza-ascensor-amueblado-piscina/163121007/d,2022-04-03
+85,163111041,1300,Eixample,Barcelona,3,2,60,7ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-terraza-ascensor/163111041/d,2022-04-03
+86,163071993,1600,Gràcia,Barcelona,2,2,59,Principal,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-amueblado/163071993/d,2022-04-03
+87,162626105,1800,Eixample,Barcelona,3,2,163,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor/162626105/d,2022-04-03
+88,163038792,1700,Ático en Eixample,Barcelona,4,2,125,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-amueblado-television/163038792/d,2022-04-03
+89,163036654,3200,Sarrià - Sant Gervasi,Barcelona,4,3,210,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-ascensor-amueblado/163036654/d,2022-04-03
+90,163027882,2750,Sant Martí,Barcelona,2,2,113,+15,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-zona-comunitaria-ascensor-amueblado-parking-piscina/163027882/d,2022-04-03
+91,163005240,1200,Sants - Montjuïc,Barcelona,2,1,40,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-ascensor-amueblado-internet/163005240/d,2022-04-03
+92,157844000,958,Sarrià - Sant Gervasi,Barcelona,1,1,46,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-no-amueblado/157844000/d,2022-04-03
+93,161277885,1915,Ático en Gràcia,Barcelona,1,1,60,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-terraza-amueblado-internet/161277885/d,2022-04-03
+94,161945724,770,Sant Andreu,Barcelona,1,1,51,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/terraza/161945724/d,2022-04-03
+95,162932292,950,Horta - Guinardó,Barcelona,3,1,50,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-trastero-zona-comunitaria-ascensor-amueblado/162932292/d,2022-04-03
+96,155243828,1200,Ciutat Vella,Barcelona,1,1,37,Entresuelo,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-amueblado-internet/155243828/d,2022-04-03
+97,155245136,1865,Sarrià - Sant Gervasi,Barcelona,2,1,80,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado/155245136/d,2022-04-03
+98,162493099,952,Sarrià - Sant Gervasi,Barcelona,1,1,46,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-no-amueblado/162493099/d,2022-04-03
+99,158891802,1950,Ciutat Vella,Barcelona,2,1,50,Entresuelo,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/television-internet/158891802/d,2022-04-03
+100,161748019,3500,Sarrià - Sant Gervasi,Barcelona,3,3,180,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-trastero-ascensor-amueblado/161748019/d,2022-04-03
+101,159099093,1248,Sarrià - Sant Gervasi,Barcelona,3,1,90,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-ascensor-no-amueblado/159099093/d,2022-04-03
+102,161909978,1237,Eixample,Barcelona,2,1,80,6ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-ascensor-no-amueblado/161909978/d,2022-04-03
+103,159622805,1400,Eixample,Barcelona,1,1,35,Subsótano,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-television-internet/159622805/d,2022-04-03
+104,162556762,1303,Les Corts,Barcelona,1,1,89,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-ascensor-no-amueblado/162556762/d,2022-04-03
+105,163104455,3029,Eixample,Barcelona,4,3,213,3ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/ascensor/163104455/d,2022-04-03
+106,163113621,1500,Ciutat Vella,Barcelona,2,2,110,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-ascensor-amueblado/163113621/d,2022-04-03
+107,163104310,1250,Gràcia,Barcelona,1,1,46,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado/163104310/d,2022-04-03
+108,163014773,2400,Eixample,Barcelona,2,3,130,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-trastero-ascensor-se-aceptan-mascotas-no-amueblado/163014773/d,2022-04-03
+109,163014181,3300,Les Corts,Barcelona,4,4,180,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-terraza-ascensor-no-amueblado/163014181/d,2022-04-03
+110,163008190,1500,Les Corts,Barcelona,4,2,88,4ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-amueblado/163008190/d,2022-04-03
+111,163129773,700,Ciutat Vella,Barcelona,1,1,35,Aire,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado/163129773/d,2022-04-03
+112,162688156,2600,Sarrià - Sant Gervasi,Barcelona,5,3,173,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor/162688156/d,2022-04-03
+113,162989066,3900,Sarrià - Sant Gervasi,Barcelona,4,4,350,Terraza,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-parking-terraza-no-amueblado/162989066/d,2022-04-03
+114,156562736,1200,Eixample,Barcelona,1,1,40,Entresuelo,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-amueblado-parking/156562736/d,2022-04-03
+115,160823411,1450,Eixample,Barcelona,2,1,70,Entresuelo,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-amueblado-parking/160823411/d,2022-04-03
+116,163127400,1550,Sarrià - Sant Gervasi,Barcelona,2,2,105,12ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado-parking/163127400/d,2022-04-03
+117,159623358,1150,Ciutat Vella,Barcelona,1,1,20,Subsótano,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-television-internet/159623358/d,2022-04-03
+118,163129526,1550,Eixample,Barcelona,3,1,147,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-ascensor-amueblado/163129526/d,2022-04-03
+119,19770978,3451,Obra Nueva Sarrià - Sant Gervasi,Barcelona,4,2,129,Ascensor,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/obra-nueva/barcelona-capital/19770978/160738816,2022-04-03
+120,163132700,900,Ciutat Vella,Barcelona,1,1,40,Terraza,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-terraza/163132700/d,2022-04-03
+121,163103956,850,Sarrià - Sant Gervasi,Barcelona,2,1,55,2ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-ascensor-no-amueblado/163103956/d,2022-04-03
+122,163129035,1950,Sant Martí,Barcelona,3,2,95,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-terraza-trastero-ascensor-piscina-piscina/163129035/d,2022-04-03
+123,163128733,1350,Sarrià - Sant Gervasi,Barcelona,1,1,52,7ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-ascensor-amueblado/163128733/d,2022-04-03
+124,163124863,790,Sarrià - Sant Gervasi,Barcelona,2,70,2ª,NA,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/sarria/163124863/d,2022-04-03
+125,163123098,1500,Sarrià - Sant Gervasi,Barcelona,3,3,120,Bajos,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-terraza-zona-comunitaria-ascensor-amueblado-parking-television-internet-piscina/163123098/d,2022-04-03
+126,19799149,1230,Sants - Montjuïc,Barcelona,1,1,3992,1ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/obra-nueva/barcelona-capital/19799149/161527010,2022-04-03
+127,163105035,2750,Sant Martí,Barcelona,2,2,113,+15,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/aire-acondicionado-calefaccion-parking-jardin-terraza-ascensor-amueblado-piscina/163105035/d,2022-04-03
+128,163102150,1200,Horta - Guinardó,Barcelona,3,1,80,5ª,Fotocasa,https://www.fotocasa.es/es/alquiler/vivienda/barcelona-capital/calefaccion-terraza-ascensor/163102150/d,2022-04-03

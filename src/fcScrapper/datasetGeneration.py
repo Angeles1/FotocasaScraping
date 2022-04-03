@@ -12,7 +12,7 @@ class datasetGeneration:
 
 
     def CreateDataSet(file_name):
-        headerList = ['ID','Precio', 'Referencia', 'Ubicacion','Ciudad', 'Habitaciones','Banos', 'Superficie', 'Planta', 'Web','Fecha', 'Enlace']
+        headerList = ['ID','Ref_code','Precio',  'Ubicacion','Ciudad', 'Habitaciones','Banos', 'Superficie', 'Planta', 'Link','Portal_web','Fecha']
     
         with open(file_name, 'w') as file:
             dw = csv.DictWriter(file, delimiter=',', 
@@ -21,7 +21,7 @@ class datasetGeneration:
     
     
     def GenerateDataset(dict_result):
-        file_name = "dataset.csv" 
+        file_name = "BCN_house_prices.csv" 
         path = Path(file_name)
         last_ID = ""
         if (path.is_file() == False):
@@ -47,4 +47,4 @@ class datasetGeneration:
         df.to_csv(file_name,mode='a',index=False,header=False)
     
 
-file_name = "dataset.csv"
+file_name = "BCN_house_prices.csv"

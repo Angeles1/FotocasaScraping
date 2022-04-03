@@ -151,16 +151,18 @@ class FcScrapper:
             #print(link_search)
             
             card_scraped = dict()
+            card_scraped['ID'] = 1
             card_scraped['ref_number'] = ref_number
             card_scraped['price'] = price
             card_scraped['location'] = title
+            card_scraped['city'] = 'Barcelona'
             card_scraped['number_of_bedrooms'] = number_of_bedrooms
             card_scraped['number_of_bathrooms'] = number_of_bathrooms
             card_scraped['dimension'] = dimension
             card_scraped['floor'] = floor
-            card_scraped['Link'] = link_search
             card_scraped['source'] = 'Fotocasa'
-            card_scraped['Ciudad'] = 'Barcelona'
+            card_scraped['Link'] = link_search
+
 
             datasetGeneration.datasetGeneration.GenerateDataset(card_scraped)
 
