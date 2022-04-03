@@ -49,3 +49,81 @@ ID,Precio,Ubicacion,Ciudad,Habitaciones,Banos,Superficie,Planta,Web,Fecha
 48,2770,Ciutat Vella,Barcelona,1,2,80,4ª,,Fotocasa,2022-04-03
 49,1800,Ciutat Vella,Barcelona,2,2,80,4ª,,Fotocasa,2022-04-03
 50,3000,Les Corts,Barcelona,4,2,150,1ª,,Fotocasa,2022-04-03
+51,1600,Sant Andreu,Barcelona,2,1,45,1ª,,Fotocasa,2022-04-03
+52,1425,Ciutat Vella,Barcelona,2,1,60,3ª,,Fotocasa,2022-04-03
+53,1400,Ciutat Vella,Barcelona,2,1,60,2ª,,Fotocasa,2022-04-03
+54,6230,Sarrià - Sant Gervasi,Barcelona,4,4,289,2ª,,Fotocasa,2022-04-03
+55,2000,Apartamento en Gràcia,Barcelona,2,1,73,5ª,,Fotocasa,2022-04-03
+56,2700,Sarrià - Sant Gervasi,Barcelona,5,3,200,3ª,,Fotocasa,2022-04-03
+57,1100,Sant Martí,Barcelona,3,1,70,1ª,,Fotocasa,2022-04-03
+58,2500,Sarrià - Sant Gervasi,Barcelona,4,3,160,5ª,,Fotocasa,2022-04-03
+59,2400,Apartamento en Gràcia,Barcelona,4,2,110,3ª,,Fotocasa,2022-04-03
+60,750,Sant Martí,Barcelona,3,2,82,1ª,,Fotocasa,2022-04-03
+61,2150,Sarrià - Sant Gervasi,Barcelona,3,3,113,2ª,,Fotocasa,2022-04-03
+62,920,Ciutat Vella,Barcelona,1,1,43,Principal,,Fotocasa,2022-04-03
+63,2100,Ciutat Vella,Barcelona,2,2,75,3ª,,Fotocasa,2022-04-03
+64,1100,Ciutat Vella,Barcelona,2,1,84,3ª,,Fotocasa,2022-04-03
+65,1238,Sant Martí,Barcelona,1,1,55,6ª,,Fotocasa,2022-04-03
+66,1150,Les Corts,Barcelona,2,1,90,2ª,,Fotocasa,2022-04-03
+67,1350,Eixample,Barcelona,3,1,60,NA,,Fotocasa,2022-04-03
+68,1400,Ciutat Vella,Barcelona,1,1,45,NA,,Fotocasa,2022-04-03
+69,2300,Dúplex en Sarrià - Sant Gervasi,Barcelona,3,3,180,5ª,,Fotocasa,2022-04-03
+70,1400,Ciutat Vella,Barcelona,3,2,78,4ª,,Fotocasa,2022-04-03
+71,860,Horta - Guinardó,Barcelona,3,1,78,Bajos,,Fotocasa,2022-04-03
+72,2500,Eixample,Barcelona,2,2,100,4ª,,Fotocasa,2022-04-03
+73,1900,Les Corts,Barcelona,4,3,151,9ª,,Fotocasa,2022-04-03
+74,900,Ciutat Vella,Barcelona,1,1,37,Bajos,,Fotocasa,2022-04-03
+75,2200,Casa adosada en Gràcia,Barcelona,3,3,130,NA,,Fotocasa,2022-04-03
+76,1050,Horta - Guinardó,Barcelona,3,2,80,NA,,Fotocasa,2022-04-03
+77,990,Ciutat Vella,Barcelona,5,1,104,4ª,,Fotocasa,2022-04-03
+78,1216,Eixample,Barcelona,2,2,60,1ª,,Fotocasa,2022-04-03
+79,1050,Eixample,Barcelona,3,1,70,2ª,,Fotocasa,2022-04-03
+80,1250,Eixample,Barcelona,4,2,88,7ª,,Fotocasa,2022-04-03
+81,1800,Horta - Guinardó,Barcelona,3,2,70,2ª,,Fotocasa,2022-04-03
+82,2900,Sarrià - Sant Gervasi,Barcelona,3,3,207,4ª,,Fotocasa,2022-04-03
+83,1238,Sarrià - Sant Gervasi,Barcelona,3,2,82,2ª,,Fotocasa,2022-04-03
+84,1300,Eixample,Barcelona,3,2,60,7ª,,Fotocasa,2022-04-03
+85,1600,Gràcia,Barcelona,2,2,59,Principal,,Fotocasa,2022-04-03
+86,1800,Eixample,Barcelona,3,2,163,NA,,Fotocasa,2022-04-03
+87,1700,Ático en Eixample,Barcelona,4,2,125,NA,,Fotocasa,2022-04-03
+88,3200,Sarrià - Sant Gervasi,Barcelona,4,3,210,3ª,,Fotocasa,2022-04-03
+89,2750,Sant Martí,Barcelona,2,2,113,+15,,Fotocasa,2022-04-03
+90,1200,Sants - Montjuïc,Barcelona,2,1,40,1ª,,Fotocasa,2022-04-03
+91,958,Sarrià - Sant Gervasi,Barcelona,1,1,46,3ª,,Fotocasa,2022-04-03
+92,1915,Ático en Gràcia,Barcelona,1,1,60,3ª,,Fotocasa,2022-04-03
+93,770,Sant Andreu,Barcelona,1,1,51,NA,,Fotocasa,2022-04-03
+94,950,Horta - Guinardó,Barcelona,3,1,50,2ª,,Fotocasa,2022-04-03
+95,1200,Ciutat Vella,Barcelona,1,1,37,Entresuelo,,Fotocasa,2022-04-03
+96,1865,Sarrià - Sant Gervasi,Barcelona,2,1,80,3ª,,Fotocasa,2022-04-03
+97,952,Sarrià - Sant Gervasi,Barcelona,1,1,46,2ª,,Fotocasa,2022-04-03
+98,1950,Ciutat Vella,Barcelona,2,1,50,Entresuelo,,Fotocasa,2022-04-03
+99,3500,Sarrià - Sant Gervasi,Barcelona,3,3,180,1ª,,Fotocasa,2022-04-03
+100,1248,Sarrià - Sant Gervasi,Barcelona,3,1,90,3ª,,Fotocasa,2022-04-03
+101,1237,Eixample,Barcelona,2,1,80,6ª,,Fotocasa,2022-04-03
+102,2450,Eixample,Barcelona,3,2,130,2ª,,Fotocasa,2022-04-03
+103,1400,Eixample,Barcelona,1,1,35,Subsótano,,Fotocasa,2022-04-03
+104,1303,Les Corts,Barcelona,1,1,89,2ª,,Fotocasa,2022-04-03
+105,3029,Eixample,Barcelona,4,3,213,3ª,,Fotocasa,2022-04-03
+106,1500,Ciutat Vella,Barcelona,2,2,110,1ª,,Fotocasa,2022-04-03
+107,1250,Gràcia,Barcelona,1,1,46,5ª,,Fotocasa,2022-04-03
+108,2400,Eixample,Barcelona,2,3,130,2ª,,Fotocasa,2022-04-03
+109,3300,Les Corts,Barcelona,4,4,180,5ª,,Fotocasa,2022-04-03
+110,1500,Les Corts,Barcelona,4,2,88,4ª,,Fotocasa,2022-04-03
+111,959,Horta - Guinardó,Barcelona,1,1,45,3ª,,Fotocasa,2022-04-03
+112,700,Ciutat Vella,Barcelona,1,1,35,Aire,,Fotocasa,2022-04-03
+113,2600,Sarrià - Sant Gervasi,Barcelona,5,3,173,5ª,,Fotocasa,2022-04-03
+114,3900,Sarrià - Sant Gervasi,Barcelona,4,4,350,Terraza,,Fotocasa,2022-04-03
+115,1200,Eixample,Barcelona,1,1,40,Entresuelo,,Fotocasa,2022-04-03
+116,1550,Sarrià - Sant Gervasi,Barcelona,2,2,105,12ª,,Fotocasa,2022-04-03
+117,1150,Ciutat Vella,Barcelona,1,1,20,Subsótano,,Fotocasa,2022-04-03
+118,1550,Eixample,Barcelona,3,1,147,1ª,,Fotocasa,2022-04-03
+119,3451,Obra Nueva Sarrià - Sant Gervasi,Barcelona,4,2,129,Ascensor,,Fotocasa,2022-04-03
+120,900,Ciutat Vella,Barcelona,1,1,40,Terraza,,Fotocasa,2022-04-03
+121,850,Sarrià - Sant Gervasi,Barcelona,2,1,55,2ª,,Fotocasa,2022-04-03
+122,1350,Sarrià - Sant Gervasi,Barcelona,1,1,52,7ª,,Fotocasa,2022-04-03
+123,790,Sarrià - Sant Gervasi,Barcelona,2,70,2ª,NA,,Fotocasa,2022-04-03
+124,1500,Sarrià - Sant Gervasi,Barcelona,3,3,120,Bajos,,Fotocasa,2022-04-03
+125,1230,Sants - Montjuïc,Barcelona,1,1,3992,1ª,,Fotocasa,2022-04-03
+126,2750,Sant Martí,Barcelona,2,2,113,+15,,Fotocasa,2022-04-03
+127,1200,Horta - Guinardó,Barcelona,3,1,80,5ª,,Fotocasa,2022-04-03
+128,1100,Sarrià - Sant Gervasi,Barcelona,1,1,54,Ascensor,,Fotocasa,2022-04-03
