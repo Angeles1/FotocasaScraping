@@ -19,3 +19,33 @@ ID,Precio,Ubicacion,Ciudad,Habitaciones,Banos,Superficie,Planta,Web,Fecha
 18,2700,Les Corts,3,3,82,NA,Idealista,2022-04-03
 19,1950,Sarrià-Sant Gervasi,3,2,86,NA,Idealista,2022-04-03
 20,2550,Sarrià-Sant Gervasi,4,3,185,NA,Idealista,2022-04-03
+21,1000,Horta - Guinardó,Barcelona,2,1,85,3ª,,Fotocasa,2022-04-03
+22,1210,Ciutat Vella,Barcelona,1,1,45,1ª,,Fotocasa,2022-04-03
+23,930,Sants - Montjuïc,Barcelona,1,1,33,5ª,,Fotocasa,2022-04-03
+24,960,Ático en Sarrià - Sant Gervasi,Barcelona,1,1,66,2ª,,Fotocasa,2022-04-03
+25,2800,Ciutat Vella,Barcelona,3,2,170,Principal,,Fotocasa,2022-04-03
+26,1690,Sarrià - Sant Gervasi,Barcelona,4,2,120,3ª,,Fotocasa,2022-04-03
+27,2200,Sarrià - Sant Gervasi,Barcelona,3,2,128,1ª,,Fotocasa,2022-04-03
+28,750,Sants - Montjuïc,Barcelona,2,1,48,2ª,,Fotocasa,2022-04-03
+29,1050,Eixample,Barcelona,1,1,50,7ª,,Fotocasa,2022-04-03
+30,2200,Sarrià - Sant Gervasi,Barcelona,3,2,130,3ª,,Fotocasa,2022-04-03
+31,2900,Sarrià - Sant Gervasi,Barcelona,5,3,138,4ª,,Fotocasa,2022-04-03
+32,2500,Apartamento en Eixample,Barcelona,3,4,100,NA,,Fotocasa,2022-04-03
+33,2000,Sarrià - Sant Gervasi,Barcelona,3,2,105,2ª,,Fotocasa,2022-04-03
+34,950,Eixample,Barcelona,2,2,63,5ª,,Fotocasa,2022-04-03
+35,874,Ciutat Vella,Barcelona,2,1,56,2ª,,Fotocasa,2022-04-03
+36,2000,Eixample,Barcelona,3,2,116,2ª,,Fotocasa,2022-04-03
+37,2500,Eixample,Barcelona,5,2,221,Principal,,Fotocasa,2022-04-03
+38,1000,Sant Andreu,Barcelona,3,1,70,7ª,,Fotocasa,2022-04-03
+39,1200,Les Corts,Barcelona,4,2,95,3ª,,Fotocasa,2022-04-03
+40,1690,Sarrià - Sant Gervasi,Barcelona,4,2,120,4ª,,Fotocasa,2022-04-03
+41,960,Sarrià - Sant Gervasi,Barcelona,1,1,50,6ª,,Fotocasa,2022-04-03
+42,2400,Ciutat Vella,Barcelona,1,1,48,NA,,Fotocasa,2022-04-03
+43,1400,Sarrià - Sant Gervasi,Barcelona,2,2,66,1ª,,Fotocasa,2022-04-03
+44,1490,Gràcia,Barcelona,3,1,70,1ª,,Fotocasa,2022-04-03
+45,3300,Eixample,Barcelona,4,5,158,NA,,Fotocasa,2022-04-03
+46,1600,Sarrià - Sant Gervasi,Barcelona,2,2,90,2ª,,Fotocasa,2022-04-03
+47,1275,Eixample,Barcelona,1,1,36,5ª,,Fotocasa,2022-04-03
+48,2770,Ciutat Vella,Barcelona,1,2,80,4ª,,Fotocasa,2022-04-03
+49,1800,Ciutat Vella,Barcelona,2,2,80,4ª,,Fotocasa,2022-04-03
+50,3000,Les Corts,Barcelona,4,2,150,1ª,,Fotocasa,2022-04-03

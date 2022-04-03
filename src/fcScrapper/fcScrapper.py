@@ -17,7 +17,7 @@ class FcScrapper:
     def __init__(self, n_pages=n_pages, url=url, executable_path=webdriver_path):
         self.n_pages = n_pages
         self.url = url
-        self.browser = webdriver.Chrome(webdriver_path)
+        self.browser = webdriver.Chrome(executable_path)
         self.open_browser()
 
     def __del__(self):
