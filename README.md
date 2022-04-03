@@ -1,6 +1,6 @@
 # Práctica 1: Web scraping
 
-## Table of contents
+## Tabla de contenido
 * [Descripción](#descripcion)
 * [Miembros del equipo](#miembros-del-equipo)
 * [Ficheros del código fuente](#ficheros-del-codigo-fuente)
@@ -8,13 +8,8 @@
 * [Requerimientos](#requerimientos)
 * [Agradecimientos](#agradecimientos)
 
-
-
-
 ## Descripción
 Esta práctica se ha realizado bajo el contexto de la asignatura Tipología y ciclo de vida de los datos, perteneciente al Máster en Ciencia de Datos de la Universitat Oberta de Catalunya. En ella, se aplican técnicas de web scraping mediante el lenguaje de programación Python para extraer así datos de la web Fotocasa y de la API Idealista y generar un dataset.
-
-
 
 ## Miembros del equipo
 Esta práctica se ha desarrollado por:
@@ -44,3 +39,12 @@ Para ejecutar el script también es necesario descargarse el webdriver correspon
 versión de Google Chrome que se tenga instalada e incluirlo en la carpeta webdriver. El webdriver
 se puede descargar desde el siguiente <a href="https://chromedriver.chromium.org/downloads">enlace</a>
 
+## Agradecimientos
+Este dataset se ha realizado gracias a la comunidad de código abierto:
+* Python
+* Selenium
+Al repositorio y control de versiones para trabajar en equipo:
+* GitHub
+Y a los portales web que tienen los datos que hemos scrapeado:
+* Fotocasa.es
+* Idealista.com
