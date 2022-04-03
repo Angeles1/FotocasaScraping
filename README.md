@@ -20,15 +20,25 @@ Esta práctica se ha desarrollado por:
 ## Recursos
 
 * Otros webScraper de Inmobiliarias
+
 https://github.com/EdelBlau/PEC_TPC
+
 https://github.com/eambroa/WebScrapingFotocasa
+
 * Ayuda con la API
+
 https://en.wikipedia.org/wiki/Base64
+
 https://developers.idealista.com/access-request
+
 * Programación
+
 https://www.geeksforgeeks.org/selenium-python-tutorial/
+
 * Guia de estilos github
+
 https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project
+
 
 ## Requerimientos
 Es necesario tener instalada la librería Selenium para ejecutar el código
@@ -43,8 +53,10 @@ se puede descargar desde el siguiente <a href="https://chromedriver.chromium.org
 Este dataset se ha realizado gracias a la comunidad de código abierto:
 * Python
 * Selenium
+
 Al repositorio y control de versiones para trabajar en equipo:
 * GitHub
+
 Y a los portales web que tienen los datos que hemos scrapeado:
 * Fotocasa.es
 * Idealista.com
