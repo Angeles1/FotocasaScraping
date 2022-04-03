@@ -15,3 +15,7 @@ Norberto Jesús de la Cruz Falcón
 Es necesario tener instalada la librería Selenium para ejecutar el código
 pip install selenium
 
+Para ejecutar el script también es necesario descargarse el webdriver correspondiente con la
+versión de Google Chrome que se tenga instalada e incluirlo en la carpeta webdriver. El webdriver
+se puede descargar desde el siguiente <a href="https://chromedriver.chromium.org/downloads">enlace</a>
+
