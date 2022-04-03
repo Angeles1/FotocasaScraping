@@ -14,10 +14,11 @@ class FcScrapper:
     url= 'https://www.fotocasa.es/es/alquiler/viviendas/barcelona-capital/todas-las-zonas/l'
     webdriver_path= 'webdriver/chromedriver.exe'
 
-    def __init__(self, n_pages=n_pages, url=url, webdriver_path=webdriver_path):
+    def __init__(self, n_pages=n_pages, url=url, executable_path=webdriver_path):
         self.n_pages = n_pages
         self.url = url
-        self.browser = webdriver.Chrome(ChromeDriverManager().install())
+        self.browser = webdriver.Chrome(executable_path)
+        #(ChromeDriverManager().install()) # NOTA: No funciona para chrome version 99
         self.open_browser()
 
     def __del__(self):
@@ -43,6 +44,8 @@ class FcScrapper:
 
     def scrap_pages(self):
         self.scrap_page()
+        time.sleep(3)
+        print ("timer")
         if self.n_pages > 1:
             for i in range(2, self.n_pages+1):
                 print("Index: " + str(i))
@@ -56,7 +59,6 @@ class FcScrapper:
         
         self.accept_cookies()
         self.scroll_to_bottom()
-
         article_selector = "section.re-SearchResult>article"
         searchs = self.browser.find_elements(by=By.CSS_SELECTOR,
                                              value=article_selector)
@@ -64,71 +66,95 @@ class FcScrapper:
         for search in searchs:
             title = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardTitle")
+            title = title.text.replace("Piso en ", "")
+            if "," in title:
+                title = title.split(", ")[-1]
             price = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardPrice")
-                  
+            price = price.text.split(" ")
+            price = price[0].replace(".", "")                  
             try:
                 number_of_bedrooms = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--rooms").text
+                number_of_bedrooms = number_of_bedrooms.split(" ")
+                number_of_bedrooms = number_of_bedrooms[0]
             except selenium.common.exceptions.NoSuchElementException:
                 features_simple = search.find_elements(by=By.CSS_SELECTOR,
                                                           value="ul.re-CardFeatures-wrapper>li")
                 if len(features_simple) > 0:
                     number_of_bedrooms = features_simple[0].text
+                    number_of_bedrooms = number_of_bedrooms.split(" ")
+                    number_of_bedrooms = number_of_bedrooms[0]
                 else:
                     number_of_bedrooms = 'NA'
-
-
+                
             try:
                 dimension = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--surface").text
+                dimension = dimension.split(" ")
+                dimension = dimension[0]                        
             except selenium.common.exceptions.NoSuchElementException:
                 features_simple = search.find_elements(by=By.CSS_SELECTOR,
                                                           value="ul.re-CardFeatures-wrapper>li")
                 if len(features_simple) > 2:
                     dimension = features_simple[2].text
+                    dimension = dimension.split(" ")
+                    dimension = dimension[0]  
                 else:
                     dimension = 'NA'
             
             try:
                 floor = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--floor").text
+                floor = floor.split(" ")
+                floor = floor[0]
             except selenium.common.exceptions.NoSuchElementException:
                 features_simple = search.find_elements(by=By.CSS_SELECTOR,
                                                           value="ul.re-CardFeatures-wrapper>li")
                 if len(features_simple) > 3:
                     floor = features_simple[3].text
+                    floor = floor.split(" ")
+                    floor = floor[0]
                 else:
                     floor = 'NA'
             
             try:
                 number_of_bathrooms = search.find_element(by=By.CSS_SELECTOR,
                                         value="span.re-CardFeaturesWithIcons-feature-icon--bathrooms").text
+                number_of_bathrooms = number_of_bathrooms.split(" ")
+                number_of_bathrooms = number_of_bathrooms[0]
+                print(number_of_bathrooms)
+
             except selenium.common.exceptions.NoSuchElementException:
                 features_simple = search.find_elements(by=By.CSS_SELECTOR,
                                                           value="ul.re-CardFeatures-wrapper>li")
                 if len(features_simple) > 1:
                     number_of_bathrooms = features_simple[1].text
+                    number_of_bathrooms = number_of_bathrooms.split(" ")
+                    number_of_bathrooms = number_of_bathrooms[0]
+                    print(number_of_bathrooms)
                 else:
                     number_of_bathrooms = 'NA'
             
-            print(title.text)
-            print(price.text)
-            print(number_of_bedrooms)
-            print(dimension)
-            print(floor)
-            print(number_of_bathrooms)
+            #print(title)
+            #print(price)
+            #print(number_of_bedrooms)
+            #print(dimension)
+            #print(floor)
+            #print(number_of_bathrooms)
             counter = counter+1
             print (str(counter))
-            
+
             card_scraped = {}
             card_scraped['ID'] = counter
-            card_scraped['price'] = price.text
-            card_scraped['location'] = title.text
+            card_scraped['price'] = price
+            card_scraped['location'] = title
+            card_scraped['city'] = 'Barcelona'
             card_scraped['number_of_bedrooms'] = number_of_bedrooms
             card_scraped['number_of_bathrooms'] = number_of_bathrooms
             card_scraped['dimension'] = dimension
             card_scraped['floor'] = floor
+            card_scraped['Link'] = ""
             card_scraped['source'] = 'Fotocasa'
 
             datasetGeneration.datasetGeneration.GenerateDataset(card_scraped)

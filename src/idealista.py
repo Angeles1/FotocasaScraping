@@ -52,17 +52,18 @@ def getItemPerPage(totalPages):
 def generate_card(infoCard):
     card_API = {}
     card_API['ID'] = 1
-    card_API['price'] = infoCard['price']
+    card_API['price'] = int(infoCard['price'])
     card_API['location'] = infoCard['district']
     card_API['number_of_bedrooms'] =  infoCard['rooms']
     card_API['number_of_bathrooms'] = infoCard['bathrooms']
-    card_API['dimension'] = infoCard['size']
+    card_API['dimension'] = int(infoCard['size'])
     try:
         card_API['floor'] = infoCard['floor']
     except:
         card_API['floor'] = 'NA'
-    card_API['date'] = ''
     card_API['source'] = 'Idealista'
+    card_API['date'] = ''
+
 
 
     datasetGeneration.datasetGeneration.GenerateDataset(card_API)
