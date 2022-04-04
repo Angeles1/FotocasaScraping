@@ -21,7 +21,7 @@ class datasetGeneration:
     
     
     def GenerateDataset(dict_result):
-        file_name = "BCN_house_prices.csv" 
+        file_name = "BCN_house_rent_price.csv" 
         path = Path(file_name)
         last_ID = ""
         if (path.is_file() == False):
@@ -42,9 +42,10 @@ class datasetGeneration:
         except ValueError:
             dict_result['ID'] = 1
         dict_result['date'] = today
+
         df = pd.DataFrame()
         df = df.append(dict_result,ignore_index=True)
         df.to_csv(file_name,mode='a',index=False,header=False)
     
 
-file_name = "BCN_house_prices.csv"
+file_name = "BCN_house_rent_price.csv"
