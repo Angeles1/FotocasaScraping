@@ -1,5 +1,6 @@
 from asyncio.windows_events import NULL
 from collections import defaultdict
+from typing import OrderedDict
 from selenium import webdriver
 import selenium
 from selenium.webdriver.common.by import By
@@ -150,7 +151,7 @@ class FcScrapper:
             #print(number_of_bathrooms)
             #print(link_search)
             
-            card_scraped = dict()
+            card_scraped = OrderedDict()
             card_scraped['ID'] = 1
             card_scraped['ref_number'] = ref_number
             card_scraped['price'] = price
@@ -162,6 +163,7 @@ class FcScrapper:
             card_scraped['floor'] = floor
             card_scraped['source'] = 'Fotocasa'
             card_scraped['Link'] = link_search
+            
 
 
             datasetGeneration.datasetGeneration.GenerateDataset(card_scraped)

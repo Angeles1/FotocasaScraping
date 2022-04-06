@@ -12,7 +12,7 @@ class datasetGeneration:
 
 
     def CreateDataSet(file_name):
-        headerList = ['ID','Ref_code','Precio',  'Ubicacion','Ciudad', 'Habitaciones','Banos', 'Superficie', 'Planta', 'Link','Portal_web','Fecha']
+        headerList = ['ID','Ref_code','Precio',  'Ubicacion','Ciudad', 'Habitaciones','Banos', 'Superficie', 'Planta', 'Portal_web','Link','Fecha']
     
         with open(file_name, 'w') as file:
             dw = csv.DictWriter(file, delimiter=',', 
@@ -42,9 +42,7 @@ class datasetGeneration:
         except ValueError:
             dict_result['ID'] = 1
         dict_result['date'] = today
-
-        df = pd.DataFrame()
-        df = df.append(dict_result,ignore_index=True)
+        df = pd.DataFrame(dict_result, index=[0])
         df.to_csv(file_name,mode='a',index=False,header=False)
     
 
