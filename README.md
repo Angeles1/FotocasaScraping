@@ -9,13 +9,21 @@
 * [Agradecimientos](#agradecimientos)
 
 ## Descripción
-Esta práctica se ha realizado bajo el contexto de la asignatura Tipología y ciclo de vida de los datos, perteneciente al Máster en Ciencia de Datos de la Universitat Oberta de Catalunya. En ella, se aplican técnicas de web scraping mediante el lenguaje de programación Python para extraer así datos de la web Fotocasa y de la API Idealista y generar un dataset.
+Esta práctica se ha realizado bajo el contexto de la asignatura Tipología y ciclo de vida de los datos, perteneciente al Máster en Ciencia de Datos de la Universitat Oberta de Catalunya. En ella, se aplican técnicas de web scraping mediante el lenguaje de programación Python para extraer así datos de la web Fotocasa y de la API Idealista y generar un dataset que contiene información sobre los alquileres de la ciudad de Barcelona.
 
 ## Miembros del equipo
 Esta práctica se ha desarrollado por:
 * María Angeles Fuentes Expósito
 * Norberto Jesús de la Cruz Falcón
 ## Ficheros del código fuente
+src/main.py --> fichero principal que realiza la inicialización/ejecución del programa
+src/fcScrapper/__init__.py --> por defecto
+src/fcScrapper/fcScrapper.py --> clase que realiza el web scraping de Fotocasa
+src/fcScrapper/idealista.py --> clase que realiza las peticiones a la API de Idealista
+src/fcScrapper/datasetGeneration.py --> Clase que se encarga de generar el dataset con los datos recogidos (de fcSrapper.py y de idealista.py)
+.gitignore --> Ignora ficheros a la subida del repositorio: idealistaKey.py
+idealistaKey.py --> configura el secreto de la API que nos ha dado Idealista. 
+NOTA: El fichero idealistaKey.py contiene la clave secreta de la API, que no debe ser compartida en repositorios públicos ('Authorization': 'Basic SECRET') por esta razón se incluye en .gitignore
 
 ## Recursos
 
