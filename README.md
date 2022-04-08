@@ -18,7 +18,7 @@ Esta práctica se ha desarrollado por:
 ## Ficheros del código fuente
 * src/main.py --> fichero principal que realiza la inicialización/ejecución del programa
 
-* src/fcScrapper/__/init__/.py --> por defecto
+* src/fcScrapper/--init--.py --> por defecto
 
 * src/fcScrapper/fcScrapper.py --> clase que realiza el web scraping de Fotocasa
 
