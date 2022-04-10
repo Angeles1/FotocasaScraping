@@ -33,12 +33,10 @@ def configureFilters():
     return totalPages
 
 def getItemPerPage(totalPages):
-    #TODO recorrer cada página y guardar datos de interés
-    #for page_number in range(1):
-    #    print(page_number)
-    url = "https://api.idealista.com/3.5/es/search?propertyType=homes&operation=rent&center=41.385063,2.173404&distance=15000&numPage="+str(totalPages)
+    for page_number in range(1):
+        print(page_number)
 
-        #url = "https://api.idealista.com/3.5/es/search?propertyType=homes&operation=rent&center=41.385063,2.173404&distance=15000&numPage="+str(page_number)
+        url = "https://api.idealista.com/3.5/es/search?propertyType=homes&operation=rent&center=41.385063,2.173404&distance=15000&numPage="+str(page_number)
 
     payload={}
     headers = {
@@ -46,8 +44,12 @@ def getItemPerPage(totalPages):
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
-    result = response.json()['totalPages']
-    print(result)
+    result = response.json()
+
+
+    for infoCard in result['elementList']:
+        generate_card(infoCard)
+
 
 def generate_card(infoCard):
     card_API = {}
@@ -68,21 +70,5 @@ def generate_card(infoCard):
     card_API['Link'] = infoCard['url']
     card_API['date'] = ''
 
-
-
     datasetGeneration.datasetGeneration.GenerateDataset(card_API)
 
-#totalPages = getAccessToken()
-#totalPages = configureFilters()
-#getItemPerPage(totalPages)
-json_file_path = "src/idealista.json"
-
-with open(json_file_path, 'r', encoding="utf8") as j:
-     contents = json.loads(j.read())
-     #print (contents)
-     #print (contents['total'])
-j.close()
-
-for infoCard in contents['elementList']:
-        #print(infoCard)
-        generate_card(infoCard)
